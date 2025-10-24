@@ -1,26 +1,32 @@
 {
   "name": "aura-showcase",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "A.U.R.A (Adaptive User Retention Assistant) showcase landing page by A4Labs - Pure React",
+  "author": "A4Labs",
+  "keywords": [
+    "user retention",
+    "AI",
+    "churn prediction",
+    "retention analytics",
+    "A4Labs",
+    "AURA",
+    "React"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "next": "16.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.0"
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
   }
 }
