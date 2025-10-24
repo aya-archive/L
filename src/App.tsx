@@ -4,7 +4,7 @@
  * This is the main landing page for A.U.R.A (Adaptive User Retention Assistant)
  * built by A4Labs. Pure React component with semantic HTML structure.
  */
-import React from 'react';
+import React, { useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { 
   Shield, 
@@ -28,6 +28,43 @@ import {
 } from 'lucide-react';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('ecommerce');
+
+  const demoData = {
+    ecommerce: {
+      title: "E-commerce Platform Dashboard",
+      subtitle: "Online retail & marketplace • A.U.R.A AI Analytics",
+      metrics: [
+        { label: "Retention Rate", value: "94.2%", change: "+12.5% this month" },
+        { label: "At-Risk Users", value: "23", change: "-8 from yesterday" },
+        { label: "AI Accuracy", value: "98.7%", change: "Prediction accuracy" },
+        { label: "Engagement", value: "87.3%", change: "User activity" }
+      ]
+    },
+    saas: {
+      title: "SaaS Platform Dashboard", 
+      subtitle: "Software as a Service • A.U.R.A AI Analytics",
+      metrics: [
+        { label: "Retention Rate", value: "89.4%", change: "+8.2% this month" },
+        { label: "At-Risk Users", value: "45", change: "-12 from yesterday" },
+        { label: "AI Accuracy", value: "97.1%", change: "Prediction accuracy" },
+        { label: "Engagement", value: "92.1%", change: "User activity" }
+      ]
+    },
+    fintech: {
+      title: "Fintech Platform Dashboard",
+      subtitle: "Financial technology • A.U.R.A AI Analytics", 
+      metrics: [
+        { label: "Retention Rate", value: "96.8%", change: "+15.3% this month" },
+        { label: "At-Risk Users", value: "12", change: "-3 from yesterday" },
+        { label: "AI Accuracy", value: "99.2%", change: "Prediction accuracy" },
+        { label: "Engagement", value: "94.7%", change: "User activity" }
+      ]
+    }
+  };
+
+  const currentData = demoData[activeTab];
+
   return (
     <>
     <main id="main-content">
@@ -195,15 +232,27 @@ function App() {
           </div>
 
           <div id="demo-tabs" className="demo-tabs">
-            <button id="ecommerce-tab" className="demo-tab active">
+            <button 
+              id="ecommerce-tab" 
+              className={`demo-tab ${activeTab === 'ecommerce' ? 'active' : ''}`}
+              onClick={() => setActiveTab('ecommerce')}
+            >
               <ShoppingCart className="tab-icon" />
               E-commerce
             </button>
-            <button id="saas-tab" className="demo-tab">
+            <button 
+              id="saas-tab" 
+              className={`demo-tab ${activeTab === 'saas' ? 'active' : ''}`}
+              onClick={() => setActiveTab('saas')}
+            >
               <Monitor className="tab-icon" />
               SaaS
             </button>
-            <button id="fintech-tab" className="demo-tab">
+            <button 
+              id="fintech-tab" 
+              className={`demo-tab ${activeTab === 'fintech' ? 'active' : ''}`}
+              onClick={() => setActiveTab('fintech')}
+            >
               <CreditCard className="tab-icon" />
               Fintech
             </button>
@@ -211,32 +260,19 @@ function App() {
 
           <div id="demo-dashboard" className="demo-dashboard">
             <div id="dashboard-header" className="dashboard-header">
-              <h3 id="dashboard-title" className="dashboard-title">E-commerce Platform Dashboard</h3>
-              <p id="dashboard-subtitle" className="dashboard-subtitle">Online retail & marketplace • A.U.R.A AI Analytics</p>
+              <h3 id="dashboard-title" className="dashboard-title">{currentData.title}</h3>
+              <p id="dashboard-subtitle" className="dashboard-subtitle">{currentData.subtitle}</p>
               <span id="live-indicator" className="live-indicator">Live AI Model</span>
             </div>
 
             <div id="dashboard-metrics" className="dashboard-metrics">
-              <div id="retention-card" className="metric-card">
-                <h4 className="metric-label">Retention Rate</h4>
-                <h3 className="metric-value">94.2%</h3>
-                <p className="metric-change">+12.5% this month</p>
-              </div>
-              <div id="at-risk-card" className="metric-card">
-                <h4 className="metric-label">At-Risk Users</h4>
-                <h3 className="metric-value">23</h3>
-                <p className="metric-change">-8 from yesterday</p>
-              </div>
-              <div id="accuracy-card" className="metric-card">
-                <h4 className="metric-label">AI Accuracy</h4>
-                <h3 className="metric-value">98.7%</h3>
-                <p className="metric-change">Prediction accuracy</p>
-              </div>
-              <div id="engagement-card" className="metric-card">
-                <h4 className="metric-label">Engagement</h4>
-                <h3 className="metric-value">87.3%</h3>
-                <p className="metric-change">User activity</p>
-              </div>
+              {currentData.metrics.map((metric, index) => (
+                <div key={index} className="metric-card">
+                  <h4 className="metric-label">{metric.label}</h4>
+                  <h3 className="metric-value">{metric.value}</h3>
+                  <p className="metric-change">{metric.change}</p>
+                </div>
+              ))}
             </div>
 
             <div id="ai-insights" className="ai-insights">
