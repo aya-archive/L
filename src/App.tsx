@@ -5,6 +5,7 @@
  * built by A4Labs. Pure React component with semantic HTML structure.
  */
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { 
   Shield, 
   Brain, 
@@ -28,6 +29,7 @@ import {
 
 function App() {
   return (
+    <>
     <main id="main-content">
       {/* Linear-style Navigation */}
       <nav id="navigation" className="navigation">
@@ -467,6 +469,8 @@ function App() {
         </div>
       </footer>
     </main>
+    <Analytics />
+    </>
   );
 }
 
