@@ -9,6 +9,27 @@ import React from 'react';
 function App() {
   return (
     <main id="main-content">
+      {/* Linear-style Navigation */}
+      <nav id="navigation" className="navigation">
+        <div className="container">
+          <div className="nav-container">
+            <div className="nav-brand">
+              <span className="brand-text">A.U.R.A</span>
+            </div>
+            <div className="nav-links">
+              <a href="#features" className="nav-link">Features</a>
+              <a href="#demo" className="nav-link">Demo</a>
+              <a href="#how-it-works" className="nav-link">How it works</a>
+              <a href="#benefits" className="nav-link">Benefits</a>
+            </div>
+            <div className="nav-actions">
+              <button className="btn-secondary">Sign in</button>
+              <button className="btn-primary">Get started</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section id="hero" className="hero-section">
         <div className="container">
@@ -21,8 +42,8 @@ function App() {
             reduce churn and boost revenue.
           </p>
           <div id="hero-buttons" className="hero-buttons">
-            <button id="request-demo-btn" className="btn-primary">Request Demo</button>
-            <button id="learn-more-btn" className="btn-secondary">Learn More</button>
+            <button id="request-demo-btn" className="btn-primary">Start building</button>
+            <button id="learn-more-btn" className="btn-secondary">Learn more</button>
           </div>
           
           <div id="hero-metrics" className="hero-metrics">
@@ -121,9 +142,9 @@ function App() {
           </div>
 
           <div id="demo-tabs" className="demo-tabs">
-            <button id="ecommerce-tab" className="demo-tab active">E-commerce Platform</button>
-            <button id="saas-tab" className="demo-tab">SaaS Application</button>
-            <button id="fintech-tab" className="demo-tab">Fintech Platform</button>
+            <button id="ecommerce-tab" className="demo-tab active">E-commerce</button>
+            <button id="saas-tab" className="demo-tab">SaaS</button>
+            <button id="fintech-tab" className="demo-tab">Fintech</button>
           </div>
 
           <div id="demo-dashboard" className="demo-dashboard">
