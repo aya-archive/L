@@ -5,6 +5,26 @@
  * built by A4Labs. Pure React component with semantic HTML structure.
  */
 import React from 'react';
+import { 
+  Shield, 
+  Brain, 
+  Target, 
+  Zap, 
+  BarChart3, 
+  Users, 
+  TrendingUp, 
+  CheckCircle,
+  ArrowRight,
+  Star,
+  Lock,
+  Eye,
+  Settings,
+  Globe,
+  Smartphone,
+  CreditCard,
+  Monitor,
+  ShoppingCart
+} from 'lucide-react';
 
 function App() {
   return (
@@ -14,13 +34,26 @@ function App() {
         <div className="container">
           <div className="nav-container">
             <div className="nav-brand">
+              <Brain className="brand-icon" />
               <span className="brand-text">A.U.R.A</span>
             </div>
             <div className="nav-links">
-              <a href="#features" className="nav-link">Features</a>
-              <a href="#demo" className="nav-link">Demo</a>
-              <a href="#how-it-works" className="nav-link">How it works</a>
-              <a href="#benefits" className="nav-link">Benefits</a>
+              <a href="#features" className="nav-link">
+                <Target className="nav-icon" />
+                Features
+              </a>
+              <a href="#demo" className="nav-link">
+                <BarChart3 className="nav-icon" />
+                Demo
+              </a>
+              <a href="#how-it-works" className="nav-link">
+                <Settings className="nav-icon" />
+                How it works
+              </a>
+              <a href="#benefits" className="nav-link">
+                <TrendingUp className="nav-icon" />
+                Benefits
+              </a>
             </div>
             <div className="nav-actions">
               <button className="btn-secondary">Sign in</button>
@@ -42,8 +75,14 @@ function App() {
             reduce churn and boost revenue.
           </p>
           <div id="hero-buttons" className="hero-buttons">
-            <button id="request-demo-btn" className="btn-primary">Start building</button>
-            <button id="learn-more-btn" className="btn-secondary">Learn more</button>
+            <button id="request-demo-btn" className="btn-primary">
+              <Zap className="btn-icon" />
+              Start building
+            </button>
+            <button id="learn-more-btn" className="btn-secondary">
+              <ArrowRight className="btn-icon" />
+              Learn more
+            </button>
           </div>
           
           <div id="hero-metrics" className="hero-metrics">
@@ -78,6 +117,9 @@ function App() {
 
           <div id="features-grid" className="features-grid">
             <div id="feature-1" className="feature-card">
+              <div className="feature-icon-container">
+                <Eye className="feature-icon" />
+              </div>
               <h3 id="feature-1-title" className="feature-title">User Behavior Analysis</h3>
               <p id="feature-1-description" className="feature-description">
                 Deep learning algorithms analyze user patterns, engagement metrics, 
@@ -90,6 +132,9 @@ function App() {
             </div>
 
             <div id="feature-2" className="feature-card">
+              <div className="feature-icon-container">
+                <TrendingUp className="feature-icon" />
+              </div>
               <h3 id="feature-2-title" className="feature-title">Predictive Analytics</h3>
               <p id="feature-2-description" className="feature-description">
                 Advanced machine learning models predict user churn probability with 
@@ -102,6 +147,9 @@ function App() {
             </div>
 
             <div id="feature-3" className="feature-card">
+              <div className="feature-icon-container">
+                <Target className="feature-icon" />
+              </div>
               <h3 id="feature-3-title" className="feature-title">Smart Personalization</h3>
               <p id="feature-3-description" className="feature-description">
                 AI-driven personalization engine delivers tailored experiences, 
@@ -114,6 +162,9 @@ function App() {
             </div>
 
             <div id="feature-4" className="feature-card">
+              <div className="feature-icon-container">
+                <Zap className="feature-icon" />
+              </div>
               <h3 id="feature-4-title" className="feature-title">Automated Interventions</h3>
               <p id="feature-4-description" className="feature-description">
                 Intelligent automation triggers personalized retention campaigns, 
@@ -142,9 +193,18 @@ function App() {
           </div>
 
           <div id="demo-tabs" className="demo-tabs">
-            <button id="ecommerce-tab" className="demo-tab active">E-commerce</button>
-            <button id="saas-tab" className="demo-tab">SaaS</button>
-            <button id="fintech-tab" className="demo-tab">Fintech</button>
+            <button id="ecommerce-tab" className="demo-tab active">
+              <ShoppingCart className="tab-icon" />
+              E-commerce
+            </button>
+            <button id="saas-tab" className="demo-tab">
+              <Monitor className="tab-icon" />
+              SaaS
+            </button>
+            <button id="fintech-tab" className="demo-tab">
+              <CreditCard className="tab-icon" />
+              Fintech
+            </button>
           </div>
 
           <div id="demo-dashboard" className="demo-dashboard">
