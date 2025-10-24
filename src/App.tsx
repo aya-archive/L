@@ -118,7 +118,7 @@ function App() {
             </div>
             <div className="nav-actions">
               <button className="btn-secondary">Sign in</button>
-              <button className="btn-primary">Get started</button>
+              <button className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>Get started</button>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ function App() {
                      automated insights.
                    </p>
           <div id="hero-buttons" className="hero-buttons">
-            <button id="request-demo-btn" className="btn-primary">
+            <button id="request-demo-btn" className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>
               <Zap className="btn-icon" />
               Start building
             </button>
@@ -477,7 +477,7 @@ function App() {
               <li id="cta-feature-6" className="cta-feature">✓ Strategy Recommendations</li>
             </ul>
             <div id="cta-buttons" className="cta-buttons">
-              <button id="start-trial-btn" className="btn-primary">Start Free Trial</button>
+              <button id="start-trial-btn" className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>Start Free Trial</button>
               <button id="schedule-demo-btn" className="btn-secondary">Schedule Demo</button>
             </div>
           </div>
