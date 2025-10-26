@@ -16,11 +16,14 @@ import {
   TrendingUp, 
   ArrowRight,
   Eye,
-  Settings
+  Settings,
+  Menu,
+  X
 } from 'lucide-react';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const demoData = {
     dashboard: {
@@ -98,7 +101,9 @@ function App() {
               <Brain className="brand-icon" />
               <span className="brand-text">A.U.R.A</span>
             </div>
-            <div className="nav-links">
+            
+            {/* Desktop Navigation */}
+            <div className="nav-links desktop-nav">
               <a href="#features" className="nav-link">
                 <Target className="nav-icon" />
                 Features
@@ -112,9 +117,41 @@ function App() {
                 How it works
               </a>
             </div>
-            <div className="nav-actions">
+            
+            {/* Desktop Actions */}
+            <div className="nav-actions desktop-nav">
               <button className="btn-secondary">Sign in</button>
               <button className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>Get started</button>
+            </div>
+            
+            {/* Mobile Menu Button */}
+            <button 
+              className="mobile-menu-btn"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+          
+          {/* Mobile Navigation */}
+          <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
+            <div className="mobile-nav-links">
+              <a href="#features" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+                <Target className="nav-icon" />
+                Features
+              </a>
+              <a href="#demo" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+                <BarChart3 className="nav-icon" />
+                Demo
+              </a>
+              <a href="#how-it-works" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+                <Settings className="nav-icon" />
+                How it works
+              </a>
+            </div>
+            <div className="mobile-nav-actions">
+              <button className="btn-secondary mobile-btn">Sign in</button>
+              <button className="btn-primary mobile-btn" onClick={() => window.open('https://contra.com/', '_blank')}>Get started</button>
             </div>
           </div>
         </div>
@@ -416,6 +453,9 @@ function App() {
                 and optimize customer retention through intelligent analytics, automated insights, 
                 and actionable recommendations with Bronze/Silver/Gold data architecture.
               </p>
+              <div id="footer-contact" className="footer-contact">
+                <p id="footer-phone" className="contact-item">📞 +968 7878 1178</p>
+              </div>
             </div>
 
             <div id="footer-product" className="footer-section">
@@ -444,7 +484,7 @@ function App() {
 
 
           <div id="footer-bottom" className="footer-bottom">
-                     <p id="footer-copyright" className="footer-copyright">© 2024 A.U.R.A Platform. All rights reserved. A.U.R.A is a trademark of the A4LABS Team.</p>
+                     <p id="footer-copyright" className="footer-copyright">© 2025 A.U.R.A Platform. All rights reserved. A.U.R.A is a trademark of the A4LABS Team.</p>
           </div>
         </div>
       </footer>
