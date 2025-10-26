@@ -313,6 +313,64 @@ function App() {
       </section>
 
 
+      {/* How It Works Section */}
+      <section id="how-it-works" className="how-it-works-section">
+        <div className="container">
+          <div className="how-it-works-container">
+            <div id="how-it-works-header" className="section-header">
+              <h2 id="how-it-works-title" className="section-title">How It Works</h2>
+              <p id="how-it-works-description" className="section-description">
+                A simple 4-step process to transform your customer retention strategy
+              </p>
+            </div>
+
+            <div id="timeline-container" className="timeline-container">
+              <div id="timeline-line" className="timeline-line"></div>
+              
+              <div id="timeline-step-1" className="timeline-step">
+                <div className="timeline-dot">
+                  <div className="step-number">1</div>
+                </div>
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Collect Data</h3>
+                  <p className="timeline-description">Gather customer insights from multiple sources</p>
+                </div>
+              </div>
+
+              <div id="timeline-step-2" className="timeline-step">
+                <div className="timeline-dot">
+                  <div className="step-number">2</div>
+                </div>
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Predict Churn</h3>
+                  <p className="timeline-description">AI identifies at-risk customers</p>
+                </div>
+              </div>
+
+              <div id="timeline-step-3" className="timeline-step">
+                <div className="timeline-dot">
+                  <div className="step-number">3</div>
+                </div>
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Generate Strategies</h3>
+                  <p className="timeline-description">AI creates personalized retention plans</p>
+                </div>
+              </div>
+
+              <div id="timeline-step-4" className="timeline-step">
+                <div className="timeline-dot">
+                  <div className="step-number">4</div>
+                </div>
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Retain Customers</h3>
+                  <p className="timeline-description">Prevent churn with targeted actions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section id="benefits" className="benefits-section">
         <div className="container">
@@ -327,18 +385,6 @@ function App() {
                    </div>
 
           <div id="benefits-metrics" className="benefits-metrics">
-            <div id="benefit-1" className="benefit-card">
-              <h3 id="benefit-1-value" className="benefit-value">6</h3>
-              <p id="benefit-1-label" className="benefit-label">Main Interface Tabs</p>
-            </div>
-            <div id="benefit-2" className="benefit-card">
-              <h3 id="benefit-2-value" className="benefit-value">3</h3>
-              <p id="benefit-2-label" className="benefit-label">Data Architecture Layers</p>
-            </div>
-            <div id="benefit-3" className="benefit-card">
-              <h3 id="benefit-3-value" className="benefit-value">4</h3>
-              <p id="benefit-3-label" className="benefit-label">AI Models</p>
-            </div>
             <div id="benefit-4" className="benefit-card">
               <h3 id="benefit-4-value" className="benefit-value">5</h3>
               <p id="benefit-4-label" className="benefit-label">Data Sources</p>

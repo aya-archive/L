@@ -1262,3 +1262,132 @@ p {
     font-size: 1.75rem;
   }
 }
+
+/* Timeline Styles */
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 3rem auto 0;
+  padding: 0 2rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #6366F1, #8B5CF6, #EC4899);
+  transform: translateX(-50%);
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.timeline-step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-step:nth-child(even) .timeline-content {
+  text-align: right;
+  margin-right: 2rem;
+  margin-left: 0;
+}
+
+.timeline-step:nth-child(odd) .timeline-content {
+  margin-left: 2rem;
+  margin-right: 0;
+}
+
+.timeline-dot {
+  position: relative;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+  transition: all 0.3s ease;
+}
+
+.timeline-dot:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.4);
+}
+
+.step-number {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.timeline-content {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+  color: #B0B0B0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 0 1rem;
+  }
+  
+  .timeline-line {
+    left: 30px;
+  }
+  
+  .timeline-step {
+    flex-direction: row !important;
+    margin-left: 60px;
+  }
+  
+  .timeline-step:nth-child(even) .timeline-content,
+  .timeline-step:nth-child(odd) .timeline-content {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .step-number {
+    font-size: 1rem;
+  }
+}
