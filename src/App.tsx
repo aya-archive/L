@@ -111,10 +111,6 @@ function App() {
                 <Settings className="nav-icon" />
                 How it works
               </a>
-              <a href="#benefits" className="nav-link">
-                <TrendingUp className="nav-icon" />
-                Benefits
-              </a>
             </div>
             <div className="nav-actions">
               <button className="btn-secondary">Sign in</button>
