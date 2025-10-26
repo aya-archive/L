@@ -147,20 +147,6 @@ function App() {
             </button>
           </div>
           
-          <div id="hero-metrics" className="hero-metrics">
-            <div id="retention-metric" className="metric-card">
-              <h3 className="metric-value">94.2%</h3>
-              <p className="metric-label">Retention Rate</p>
-            </div>
-            <div id="at-risk-metric" className="metric-card">
-              <h3 className="metric-value">23</h3>
-              <p className="metric-label">At-Risk Users</p>
-            </div>
-            <div id="accuracy-metric" className="metric-card">
-              <h3 className="metric-value">98.7%</h3>
-              <p className="metric-label">AI Accuracy</p>
-            </div>
-          </div>
           </div>
         </div>
       </section>
@@ -227,21 +213,6 @@ function App() {
                        </div>
                      </div>
 
-                     <div id="feature-4" className="feature-card">
-                       <div className="feature-icon-container">
-                         <Zap className="feature-icon" />
-                       </div>
-                       <h3 id="feature-4-title" className="feature-title">Data Pipeline</h3>
-                       <p id="feature-4-description" className="feature-description">
-                         Bronze/Silver/Gold data architecture with automated processing, data cleaning, 
-                         transformation, enrichment, and business-ready analytics with comprehensive 
-                         monitoring and alerts.
-                       </p>
-                       <div id="feature-4-ai" className="ai-integration">
-                         <p className="ai-label">AI Model Integration:</p>
-                         <p className="ai-details">Medallion pattern data architecture with automated processing and monitoring</p>
-                       </div>
-                     </div>
           </div>
           </div>
         </div>
@@ -341,73 +312,6 @@ function App() {
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section id="how-it-works" className="how-it-works-section">
-        <div className="container">
-          <div className="how-it-works-container">
-          <div id="how-it-works-header" className="section-header">
-            <h2 id="how-it-works-title" className="section-title">A.U.R.A's Data Architecture & AI Models</h2>
-            <p id="how-it-works-description" className="section-description">
-              A.U.R.A uses a sophisticated medallion pattern data architecture with Bronze/Silver/Gold layers, 
-              powered by Prophet forecasting, rule-based decision engines, and NLP chatbots to deliver 
-              comprehensive customer retention insights and automated recommendations.
-            </p>
-          </div>
-
-          <div id="process-flow" className="process-flow">
-            <div id="step-1" className="process-step">
-              <h3 id="step-1-title" className="step-title">Bronze Layer</h3>
-              <p id="step-1-description" className="step-description">
-                Raw data ingestion from multiple sources: customer demographics, transaction history, 
-                engagement logs, support interactions, and feedback surveys in their original format.
-              </p>
-            </div>
-
-            <div id="step-2" className="process-step">
-              <h3 id="step-2-title" className="step-title">Silver Layer</h3>
-              <p id="step-2-description" className="step-description">
-                Data cleaning, transformation, and enrichment. Customer profiles are created, 
-                engagement metrics are calculated, and data is standardized for analysis.
-              </p>
-            </div>
-
-            <div id="step-3" className="process-step">
-              <h3 id="step-3-title" className="step-title">Gold Layer</h3>
-              <p id="step-3-description" className="step-description">
-                Business-ready analytics and insights. Customer 360 dashboard views, 
-                KPI dashboards, and AI model features are prepared for churn prediction.
-              </p>
-            </div>
-
-            <div id="step-4" className="process-step">
-              <h3 id="step-4-title" className="step-title">AI Models</h3>
-              <p id="step-4-description" className="step-description">
-                Prophet forecasting for time series prediction, rule-based decision engine for 
-                churn risk classification, and NLP chatbot for natural language queries and insights.
-              </p>
-            </div>
-          </div>
-
-          <div id="technical-excellence" className="technical-excellence">
-            <h3 id="tech-title" className="tech-title">Technology Stack</h3>
-            <div id="tech-highlights" className="tech-highlights">
-              <div id="tech-1" className="tech-card">
-                <h4 id="tech-1-title" className="tech-title">Backend & AI/ML</h4>
-                <p id="tech-1-description" className="tech-description">Python 3.8+, Pandas, NumPy, Scikit-learn, Prophet, Transformers, Sentence-Transformers</p>
-              </div>
-              <div id="tech-2" className="tech-card">
-                <h4 id="tech-2-title" className="tech-title">Frontend & Visualization</h4>
-                <p id="tech-2-description" className="tech-description">Gradio, Streamlit, Plotly, Matplotlib for interactive dashboards and data exploration</p>
-              </div>
-              <div id="tech-3" className="tech-card">
-                <h4 id="tech-3-title" className="tech-title">Data & Deployment</h4>
-                <p id="tech-3-description" className="tech-description">Parquet, CSV, JSON data formats with Docker deployment and Gradio Spaces integration</p>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
 
       {/* Benefits Section */}
       <section id="benefits" className="benefits-section">
@@ -441,26 +345,6 @@ function App() {
             </div>
           </div>
 
-          <div id="success-stories" className="success-stories">
-            <h3 id="stories-title" className="stories-title">Success Stories</h3>
-            <div id="stories-grid" className="stories-grid">
-              <div id="story-1" className="story-card">
-                <h4 id="story-1-company" className="story-company">Data Science Team</h4>
-                <p id="story-1-quote" className="story-quote">"A.U.R.A's comprehensive dashboard and real-time monitoring helped us identify at-risk customers immediately. The Prophet forecasting model gave us incredible insights into future trends."</p>
-                <p id="story-1-author" className="story-author">- Enterprise Customer</p>
-              </div>
-              <div id="story-2" className="story-card">
-                <h4 id="story-2-company" className="story-company">Product Manager</h4>
-                <p id="story-2-quote" className="story-quote">"The AI Assistant's natural language queries made data exploration so intuitive. We could ask complex questions about our customer data and get instant, intelligent responses."</p>
-                <p id="story-2-author" className="story-author">- SaaS Company</p>
-              </div>
-              <div id="story-3" className="story-card">
-                <h4 id="story-3-company" className="story-company">CTO</h4>
-                <p id="story-3-quote" className="story-quote">"The Bronze/Silver/Gold data pipeline architecture was exactly what we needed. A.U.R.A transformed our raw data into actionable business insights with automated processing and monitoring."</p>
-                <p id="story-3-author" className="story-author">- Fintech Startup</p>
-              </div>
-            </div>
-          </div>
 
           <div id="cta-section" className="cta-section">
             <h2 id="cta-title" className="cta-title">Ready to Experience A.U.R.A?</h2>
@@ -469,12 +353,9 @@ function App() {
               AI-powered analytics, and automated insights for your business.
             </p>
             <ul id="cta-features" className="cta-features">
-              <li id="cta-feature-1" className="cta-feature">✓ 6-Tab Gradio Interface</li>
-              <li id="cta-feature-2" className="cta-feature">✓ Bronze/Silver/Gold Data Pipeline</li>
-              <li id="cta-feature-3" className="cta-feature">✓ Prophet Forecasting</li>
-              <li id="cta-feature-4" className="cta-feature">✓ AI Chatbot Assistant</li>
-              <li id="cta-feature-5" className="cta-feature">✓ Risk Analysis Engine</li>
-              <li id="cta-feature-6" className="cta-feature">✓ Strategy Recommendations</li>
+              <li id="cta-feature-2" className="cta-feature">✓ AI Chatbot Assistant</li>
+              <li id="cta-feature-3" className="cta-feature">✓ Risk Analysis Engine</li>
+              <li id="cta-feature-4" className="cta-feature">✓ Strategy Recommendations</li>
             </ul>
             <div id="cta-buttons" className="cta-buttons">
               <button id="start-trial-btn" className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>Start Free Trial</button>
@@ -497,11 +378,6 @@ function App() {
                 and optimize customer retention through intelligent analytics, automated insights, 
                 and actionable recommendations with Bronze/Silver/Gold data architecture.
               </p>
-              <div id="footer-contact" className="footer-contact">
-                <p id="footer-email" className="contact-item">📧 hello@a4labs.ai</p>
-                <p id="footer-phone" className="contact-item">📞 +1 (555) 123-4567</p>
-                <p id="footer-location" className="contact-item">📍 San Francisco, CA</p>
-              </div>
             </div>
 
             <div id="footer-product" className="footer-section">
@@ -510,7 +386,6 @@ function App() {
                 <li id="footer-features-link" className="footer-link">Features</li>
                 <li id="footer-how-it-works-link" className="footer-link">How It Works</li>
                 <li id="footer-demo-link" className="footer-link">Demo</li>
-                <li id="footer-pricing-link" className="footer-link">Pricing</li>
               </ul>
             </div>
 
@@ -518,9 +393,6 @@ function App() {
               <h4 id="footer-company-title" className="footer-section-title">Company</h4>
               <ul id="footer-company-links-list" className="footer-links">
                 <li id="footer-about-link" className="footer-link">About A4Labs</li>
-                <li id="footer-careers-link" className="footer-link">Careers</li>
-                <li id="footer-blog-link" className="footer-link">Blog</li>
-                <li id="footer-press-link" className="footer-link">Press</li>
               </ul>
             </div>
 
@@ -528,34 +400,13 @@ function App() {
               <h4 id="footer-support-title" className="footer-section-title">Support</h4>
               <ul id="footer-support-links" className="footer-links">
                 <li id="footer-docs-link" className="footer-link">Documentation</li>
-                <li id="footer-help-link" className="footer-link">Help Center</li>
-                <li id="footer-contact-support-link" className="footer-link">Contact Support</li>
-                <li id="footer-status-link" className="footer-link">Status</li>
               </ul>
             </div>
           </div>
 
-          <div id="footer-newsletter" className="footer-newsletter">
-            <h4 id="newsletter-title" className="newsletter-title">Stay Updated with A.U.R.A</h4>
-            <p id="newsletter-description" className="newsletter-description">Get the latest insights on AI-powered retention strategies and product updates.</p>
-            <div id="newsletter-form" className="newsletter-form">
-              <input id="newsletter-email" type="email" placeholder="Enter your email" className="newsletter-input" />
-              <button id="newsletter-submit" className="newsletter-button">Subscribe</button>
-            </div>
-          </div>
 
           <div id="footer-bottom" className="footer-bottom">
-                     <p id="footer-copyright" className="footer-copyright">© 2024 A.U.R.A Platform. All rights reserved. A.U.R.A is a trademark of the A.U.R.A Team.</p>
-            <div id="footer-social" className="footer-social">
-              <span id="social-linkedin" className="social-link">LinkedIn</span>
-              <span id="social-twitter" className="social-link">Twitter</span>
-              <span id="social-github" className="social-link">GitHub</span>
-            </div>
-            <div id="footer-legal" className="footer-legal">
-              <span id="legal-privacy" className="legal-link">Privacy Policy</span>
-              <span id="legal-terms" className="legal-link">Terms of Service</span>
-              <span id="legal-cookies" className="legal-link">Cookie Policy</span>
-            </div>
+                     <p id="footer-copyright" className="footer-copyright">© 2024 A.U.R.A Platform. All rights reserved. A.U.R.A is a trademark of the A4LABS Team.</p>
           </div>
         </div>
       </footer>
