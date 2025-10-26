@@ -385,10 +385,6 @@ function App() {
                    </div>
 
           <div id="benefits-metrics" className="benefits-metrics">
-            <div id="benefit-4" className="benefit-card">
-              <h3 id="benefit-4-value" className="benefit-value">5</h3>
-              <p id="benefit-4-label" className="benefit-label">Data Sources</p>
-            </div>
           </div>
 
 
