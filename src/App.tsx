@@ -360,18 +360,16 @@ function App() {
               </p>
             </div>
 
-            <div id="timeline-container" className="timeline-container">
-              <div id="timeline-line" className="timeline-line"></div>
-              
-              <div id="timeline-step-1" className="timeline-step">
-                <div className="timeline-dot">
+            <div id="steps-grid" className="steps-grid">
+              <div id="step-1" className="step-card">
+                <div className="step-header">
                   <div className="step-icon">📊</div>
                   <div className="step-number">1</div>
                 </div>
-                <div className="timeline-content">
-                  <h3 className="timeline-title">Collect Data</h3>
-                  <p className="timeline-description">Gather comprehensive customer insights from multiple sources including demographics, behavior, and engagement metrics</p>
-                  <div className="timeline-features">
+                <div className="step-content">
+                  <h3 className="step-title">Collect Data</h3>
+                  <p className="step-description">Gather comprehensive customer insights from multiple sources including demographics, behavior, and engagement metrics</p>
+                  <div className="step-features">
                     <span className="feature-tag">Demographics</span>
                     <span className="feature-tag">Behavior</span>
                     <span className="feature-tag">Engagement</span>
@@ -379,15 +377,15 @@ function App() {
                 </div>
               </div>
 
-              <div id="timeline-step-2" className="timeline-step">
-                <div className="timeline-dot">
+              <div id="step-2" className="step-card">
+                <div className="step-header">
                   <div className="step-icon">🔮</div>
                   <div className="step-number">2</div>
                 </div>
-                <div className="timeline-content">
-                  <h3 className="timeline-title">Predict Churn</h3>
-                  <p className="timeline-description">Advanced AI models analyze patterns and identify at-risk customers before they leave</p>
-                  <div className="timeline-features">
+                <div className="step-content">
+                  <h3 className="step-title">Predict Churn</h3>
+                  <p className="step-description">Advanced AI models analyze patterns and identify at-risk customers before they leave</p>
+                  <div className="step-features">
                     <span className="feature-tag">AI Analysis</span>
                     <span className="feature-tag">Risk Scoring</span>
                     <span className="feature-tag">Early Detection</span>
@@ -395,15 +393,15 @@ function App() {
                 </div>
               </div>
 
-              <div id="timeline-step-3" className="timeline-step">
-                <div className="timeline-dot">
+              <div id="step-3" className="step-card">
+                <div className="step-header">
                   <div className="step-icon">⚡</div>
                   <div className="step-number">3</div>
                 </div>
-                <div className="timeline-content">
-                  <h3 className="timeline-title">Generate Strategies</h3>
-                  <p className="timeline-description">AI-powered recommendation engine creates personalized retention plans tailored to each customer</p>
-                  <div className="timeline-features">
+                <div className="step-content">
+                  <h3 className="step-title">Generate Strategies</h3>
+                  <p className="step-description">AI-powered recommendation engine creates personalized retention plans tailored to each customer</p>
+                  <div className="step-features">
                     <span className="feature-tag">Personalized</span>
                     <span className="feature-tag">Automated</span>
                     <span className="feature-tag">Targeted</span>
@@ -411,15 +409,15 @@ function App() {
                 </div>
               </div>
 
-              <div id="timeline-step-4" className="timeline-step">
-                <div className="timeline-dot">
+              <div id="step-4" className="step-card">
+                <div className="step-header">
                   <div className="step-icon">🎯</div>
                   <div className="step-number">4</div>
                 </div>
-                <div className="timeline-content">
-                  <h3 className="timeline-title">Retain Customers</h3>
-                  <p className="timeline-description">Implement targeted interventions and personalized experiences to prevent churn and boost retention</p>
-                  <div className="timeline-features">
+                <div className="step-content">
+                  <h3 className="step-title">Retain Customers</h3>
+                  <p className="step-description">Implement targeted interventions and personalized experiences to prevent churn and boost retention</p>
+                  <div className="step-features">
                     <span className="feature-tag">Interventions</span>
                     <span className="feature-tag">Personalization</span>
                     <span className="feature-tag">Retention</span>
