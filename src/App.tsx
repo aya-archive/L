@@ -477,11 +477,8 @@ function App() {
               <p id="footer-company-description" className="footer-description">
                 A comprehensive AI-powered platform that empowers businesses to predict, prevent, 
                 and optimize customer retention through intelligent analytics, automated insights, 
-                and actionable recommendations with Bronze/Silver/Gold data architecture.
+                and actionable recommendations.
               </p>
-              <div id="footer-contact" className="footer-contact">
-                <p id="footer-phone" className="contact-item">📞 +968 7878 1178</p>
-              </div>
             </div>
 
             <div id="footer-product" className="footer-section">
@@ -497,6 +494,7 @@ function App() {
               <h4 id="footer-company-title" className="footer-section-title">Company</h4>
               <ul id="footer-company-links-list" className="footer-links">
                 <li id="footer-about-link" className="footer-link">About A4Labs</li>
+                <li id="footer-phone-link" className="footer-link">📞 +968 7878 1178</li>
               </ul>
             </div>
 
