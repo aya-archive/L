@@ -82,8 +82,8 @@ function App() {
     <main className="app">
       {/* Navigation */}
       <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
-        <div className="nav-container">
-          <div className="nav-brand">
+          <div className="nav-container">
+            <div className="nav-brand">
             <span className="brand-text">AURA</span>
           </div>
           
@@ -113,15 +113,15 @@ function App() {
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-          </div>
-        </div>
+            </div>
+            </div>
         
         <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <div className="mobile-nav-links">
             <a href="#features" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
             <a href="#demo" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Demo</a>
             <a href="#how-it-works" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>How it works</a>
-          </div>
+            </div>
           <div className="mobile-nav-actions">
             <button className="btn-primary mobile-btn" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>
               <Sparkles size={16} />
@@ -171,10 +171,6 @@ function App() {
                 <span>Free Demo</span>
                 <div className="btn-shine"></div>
               </button>
-              <button className="btn-secondary hero-btn">
-                <Volume2 size={16} />
-                <span>Watch Demo</span>
-              </button>
             </div>
             <div className="hero-stats">
               <div className="stat-item">
@@ -188,8 +184,8 @@ function App() {
               <div className="stat-item">
                 <div className="stat-number">87%</div>
                 <div className="stat-label">Retention Rate</div>
-              </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -205,8 +201,8 @@ function App() {
             <h2 className="section-title">Intelligent Analytics</h2>
             <p className="section-description">
               AURA's smart ecosystem combines machine learning and intuitive design to simplify complex analytics.
-            </p>
-          </div>
+                     </p>
+                   </div>
 
           <div className="features-grid">
             <div 
@@ -217,7 +213,7 @@ function App() {
               <div className="feature-icon">
                 <Shield size={32} />
                 <div className="icon-glow"></div>
-              </div>
+                       </div>
               <h3 className="feature-title">Churn AI</h3>
               <p className="feature-description">
                 Predicts customer risk with remarkable accuracy, using behavior and engagement data 
@@ -236,8 +232,8 @@ function App() {
               <div className="feature-link">
                 <span>Explore AI</span>
                 <ChevronRight size={16} />
-              </div>
-            </div>
+                       </div>
+                     </div>
 
             <div 
               className={`feature-card ${hoveredCard === 1 ? 'hovered' : ''}`}
@@ -247,7 +243,7 @@ function App() {
               <div className="feature-icon">
                 <Brain size={32} />
                 <div className="icon-glow"></div>
-              </div>
+                       </div>
               <h3 className="feature-title">AI Assistant</h3>
               <p className="feature-description">
                 Helps you interpret results and suggests data-driven actions to improve retention 
@@ -266,8 +262,8 @@ function App() {
               <div className="feature-link">
                 <span>Try Assistant</span>
                 <ChevronRight size={16} />
-              </div>
-            </div>
+                       </div>
+                     </div>
 
             <div 
               className={`feature-card ${hoveredCard === 2 ? 'hovered' : ''}`}
@@ -277,7 +273,7 @@ function App() {
               <div className="feature-icon">
                 <Zap size={32} />
                 <div className="icon-glow"></div>
-              </div>
+                       </div>
               <h3 className="feature-title">Smart CSV Upload</h3>
               <p className="feature-description">
                 Your data is validated, cleaned, and processed automatically — no manual setup required. 
@@ -291,13 +287,13 @@ function App() {
                 <div className="metric">
                   <span className="metric-value">Real-time</span>
                   <span className="metric-label">Updates</span>
-                </div>
-              </div>
+                       </div>
+                     </div>
               <div className="feature-link">
                 <span>Upload Data</span>
                 <ChevronRight size={16} />
-              </div>
-            </div>
+                     </div>
+          </div>
           </div>
         </div>
       </section>
@@ -312,16 +308,15 @@ function App() {
               instantly processes and analyzes thousands of customers. In seconds, you'll see churn 
               predictions, engagement scores, and clear risk levels displayed across vibrant, 
               interactive dashboards.
-            </p>
-          </div>
-          
+                     </p>
+                   </div>
+
           <div className="demo-content">
             <div className="demo-visual">
               <div className="demo-placeholder">
                 <BarChart3 size={64} />
-                <p>Interactive Dashboard Preview</p>
-              </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -369,15 +364,15 @@ function App() {
                 <h3 className="step-title">AI Interpretation</h3>
                 <p className="step-description">AURA's assistant interprets your data, summarizing patterns and offering intelligent recommendations</p>
               </div>
-            </div>
+              </div>
 
             <div className="step">
               <div className="step-number">05</div>
               <div className="step-content">
                 <h3 className="step-title">Act with Confidence</h3>
                 <p className="step-description">Finally, AURA helps you act with confidence by providing actionable insights and intelligent recommendations</p>
-              </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -393,7 +388,7 @@ function App() {
             <div className="cta-actions">
               <button className="btn-primary" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>Free Demo</button>
               <button className="btn-secondary">Schedule Demo</button>
-            </div>
+          </div>
           </div>
         </div>
       </section>
@@ -417,23 +412,23 @@ function App() {
                   <li><a href="#features" className="footer-link">Features</a></li>
                   <li><a href="#how-it-works" className="footer-link">How It Works</a></li>
                   <li><a href="#demo" className="footer-link">Demo</a></li>
-                </ul>
-              </div>
+              </ul>
+            </div>
 
               <div className="footer-section">
                 <h4 className="footer-section-title">Company</h4>
                 <ul className="footer-list">
                   <li><a href="#" className="footer-link">About A4Labs</a></li>
                   <li><span className="footer-link">📞 +968 7878 1178</span></li>
-                </ul>
-              </div>
+              </ul>
+            </div>
 
               <div className="footer-section">
                 <h4 className="footer-section-title">Support</h4>
                 <ul className="footer-list">
                   <li><a href="#" className="footer-link">Documentation</a></li>
-                </ul>
-              </div>
+              </ul>
+            </div>
             </div>
           </div>
 
