@@ -359,32 +359,32 @@ function App() {
               </p>
             </div>
 
-            <div id="steps-grid" className="steps-grid">
-              <div id="step-1" className="step-card">
-                <div className="step-header">
+            <div id="timeline-container" className="timeline-container">
+              <div id="timeline-line" className="timeline-line"></div>
+              
+              <div id="timeline-step-1" className="timeline-step">
+                <div className="timeline-dot">
                   <div className="step-icon">📤</div>
-                  <div className="step-number">1</div>
-            </div>
-                <div className="step-content">
-                  <h3 className="step-title">Upload Data</h3>
-                  <p className="step-description">Start by uploading your customer data — AURA's AI engine automatically cleans and maps your dataset</p>
-                  <div className="step-features">
+                </div>
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Upload Data</h3>
+                  <p className="timeline-description">Start by uploading your customer data — AURA's AI engine automatically cleans and maps your dataset</p>
+                  <div className="timeline-features">
                     <span className="feature-tag">Smart Upload</span>
                     <span className="feature-tag">Auto Clean</span>
                     <span className="feature-tag">Data Mapping</span>
-            </div>
-            </div>
-          </div>
-
-              <div id="step-2" className="step-card">
-                <div className="step-header">
-                  <div className="step-icon">🔮</div>
-                  <div className="step-number">2</div>
+                  </div>
                 </div>
-                <div className="step-content">
-                  <h3 className="step-title">Evaluate Patterns</h3>
-                  <p className="step-description">The platform evaluates engagement patterns and calculates churn probabilities for every customer</p>
-                  <div className="step-features">
+              </div>
+
+              <div id="timeline-step-2" className="timeline-step">
+                <div className="timeline-dot">
+                  <div className="step-icon">🔮</div>
+                </div>
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Evaluate Patterns</h3>
+                  <p className="timeline-description">The platform evaluates engagement patterns and calculates churn probabilities for every customer</p>
+                  <div className="timeline-features">
                     <span className="feature-tag">Pattern Analysis</span>
                     <span className="feature-tag">Churn Probability</span>
                     <span className="feature-tag">Engagement Metrics</span>
@@ -392,15 +392,14 @@ function App() {
                 </div>
               </div>
 
-              <div id="step-3" className="step-card">
-                <div className="step-header">
+              <div id="timeline-step-3" className="timeline-step">
+                <div className="timeline-dot">
                   <div className="step-icon">📊</div>
-                  <div className="step-number">3</div>
                 </div>
-                <div className="step-content">
-                  <h3 className="step-title">Generate Dashboards</h3>
-                  <p className="step-description">It then generates dynamic dashboards that visualize performance, risk, and retention health</p>
-                  <div className="step-features">
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Generate Dashboards</h3>
+                  <p className="timeline-description">It then generates dynamic dashboards that visualize performance, risk, and retention health</p>
+                  <div className="timeline-features">
                     <span className="feature-tag">Dynamic Visuals</span>
                     <span className="feature-tag">Performance Metrics</span>
                     <span className="feature-tag">Risk Visualization</span>
@@ -408,15 +407,14 @@ function App() {
                 </div>
               </div>
 
-              <div id="step-4" className="step-card">
-                <div className="step-header">
+              <div id="timeline-step-4" className="timeline-step">
+                <div className="timeline-dot">
                   <div className="step-icon">🧠</div>
-                  <div className="step-number">4</div>
                 </div>
-                <div className="step-content">
-                  <h3 className="step-title">AI Interpretation</h3>
-                  <p className="step-description">AURA's assistant interprets your data, summarizing patterns and offering intelligent recommendations</p>
-                  <div className="step-features">
+                <div className="timeline-content">
+                  <h3 className="timeline-title">AI Interpretation</h3>
+                  <p className="timeline-description">AURA's assistant interprets your data, summarizing patterns and offering intelligent recommendations</p>
+                  <div className="timeline-features">
                     <span className="feature-tag">Data Interpretation</span>
                     <span className="feature-tag">Pattern Summary</span>
                     <span className="feature-tag">Smart Recommendations</span>
@@ -424,22 +422,21 @@ function App() {
                 </div>
               </div>
 
-              <div id="step-5" className="step-card">
-                <div className="step-header">
+              <div id="timeline-step-5" className="timeline-step">
+                <div className="timeline-dot">
                   <div className="step-icon">🎯</div>
-                  <div className="step-number">5</div>
                 </div>
-                <div className="step-content">
-                  <h3 className="step-title">Act with Confidence</h3>
-                  <p className="step-description">Finally, AURA helps you act with confidence by providing actionable insights and intelligent recommendations</p>
-                  <div className="step-features">
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Act with Confidence</h3>
+                  <p className="timeline-description">Finally, AURA helps you act with confidence by providing actionable insights and intelligent recommendations</p>
+                  <div className="timeline-features">
                     <span className="feature-tag">Actionable Insights</span>
                     <span className="feature-tag">Confident Decisions</span>
                     <span className="feature-tag">Intelligent Actions</span>
                   </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
