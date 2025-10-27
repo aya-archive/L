@@ -29,7 +29,7 @@ import {
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true); // Default to dark mode
   const [isScrolled, setIsScrolled] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isPlaying, setIsPlaying] = useState(false);
@@ -157,8 +157,8 @@ function App() {
             </div>
             <h1 className="hero-title">
               <span className="title-line">AURA</span>
-              <span className="title-subtitle">Adaptive User Retention Assistant</span>
             </h1>
+            <h2 className="hero-subtitle">Adaptive User Retention Assistant</h2>
             <p className="hero-description">
               A unified, AI-powered client retention platform that helps businesses understand, 
               predict, and prevent customer churn. With its adaptive intelligence and bold, 
