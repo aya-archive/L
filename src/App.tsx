@@ -351,9 +351,12 @@ function App() {
         <div className="container">
           <div className="how-it-works-container">
             <div id="how-it-works-header" className="section-header">
-              <h2 id="how-it-works-title" className="section-title">How It Works</h2>
+              <div className="section-badge">
+                <span className="badge-text">How It Works</span>
+              </div>
+              <h2 id="how-it-works-title" className="section-title">Transform Your Customer Retention Strategy</h2>
               <p id="how-it-works-description" className="section-description">
-                A simple 4-step process to transform your customer retention strategy
+                A simple 4-step process powered by AI to predict, prevent, and optimize customer retention
               </p>
             </div>
 
@@ -362,41 +365,65 @@ function App() {
               
               <div id="timeline-step-1" className="timeline-step">
                 <div className="timeline-dot">
+                  <div className="step-icon">📊</div>
                   <div className="step-number">1</div>
                 </div>
                 <div className="timeline-content">
                   <h3 className="timeline-title">Collect Data</h3>
-                  <p className="timeline-description">Gather customer insights from multiple sources</p>
+                  <p className="timeline-description">Gather comprehensive customer insights from multiple sources including demographics, behavior, and engagement metrics</p>
+                  <div className="timeline-features">
+                    <span className="feature-tag">Demographics</span>
+                    <span className="feature-tag">Behavior</span>
+                    <span className="feature-tag">Engagement</span>
+                  </div>
                 </div>
               </div>
 
               <div id="timeline-step-2" className="timeline-step">
                 <div className="timeline-dot">
+                  <div className="step-icon">🔮</div>
                   <div className="step-number">2</div>
                 </div>
                 <div className="timeline-content">
                   <h3 className="timeline-title">Predict Churn</h3>
-                  <p className="timeline-description">AI identifies at-risk customers</p>
+                  <p className="timeline-description">Advanced AI models analyze patterns and identify at-risk customers before they leave</p>
+                  <div className="timeline-features">
+                    <span className="feature-tag">AI Analysis</span>
+                    <span className="feature-tag">Risk Scoring</span>
+                    <span className="feature-tag">Early Detection</span>
+                  </div>
                 </div>
               </div>
 
               <div id="timeline-step-3" className="timeline-step">
                 <div className="timeline-dot">
+                  <div className="step-icon">⚡</div>
                   <div className="step-number">3</div>
                 </div>
                 <div className="timeline-content">
                   <h3 className="timeline-title">Generate Strategies</h3>
-                  <p className="timeline-description">AI creates personalized retention plans</p>
+                  <p className="timeline-description">AI-powered recommendation engine creates personalized retention plans tailored to each customer</p>
+                  <div className="timeline-features">
+                    <span className="feature-tag">Personalized</span>
+                    <span className="feature-tag">Automated</span>
+                    <span className="feature-tag">Targeted</span>
+                  </div>
                 </div>
               </div>
 
               <div id="timeline-step-4" className="timeline-step">
                 <div className="timeline-dot">
+                  <div className="step-icon">🎯</div>
                   <div className="step-number">4</div>
                 </div>
                 <div className="timeline-content">
                   <h3 className="timeline-title">Retain Customers</h3>
-                  <p className="timeline-description">Prevent churn with targeted actions</p>
+                  <p className="timeline-description">Implement targeted interventions and personalized experiences to prevent churn and boost retention</p>
+                  <div className="timeline-features">
+                    <span className="feature-tag">Interventions</span>
+                    <span className="feature-tag">Personalization</span>
+                    <span className="feature-tag">Retention</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -430,7 +457,6 @@ function App() {
             <ul id="cta-features" className="cta-features">
               <li id="cta-feature-2" className="cta-feature">✓ AI Chatbot Assistant</li>
               <li id="cta-feature-3" className="cta-feature">✓ Risk Analysis Engine</li>
-              <li id="cta-feature-4" className="cta-feature">✓ Strategy Recommendations</li>
             </ul>
             <div id="cta-buttons" className="cta-buttons">
               <button id="start-trial-btn" className="btn-primary" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>Free Demo</button>
