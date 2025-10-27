@@ -172,20 +172,6 @@ function App() {
                 <div className="btn-shine"></div>
               </button>
             </div>
-            <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">94.2%</div>
-                <div className="stat-label">AI Accuracy</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">2.8K+</div>
-                <div className="stat-label">Customers</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">87%</div>
-                <div className="stat-label">Retention Rate</div>
-            </div>
-          </div>
           </div>
         </div>
       </section>
