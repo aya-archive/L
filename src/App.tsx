@@ -2,7 +2,7 @@
  * AURA - Adaptive User Retention Assistant
  * Redesigned with evensix.com aesthetic
  */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { 
   Shield, 
@@ -16,17 +16,45 @@ import {
   Eye,
   Settings,
   Menu,
-  X
+  X,
+  Sun,
+  Moon,
+  ChevronRight
 } from 'lucide-react';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Dark mode toggle
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Scroll detection for navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Apply dark mode class to body
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [isDarkMode]);
 
   return (
     <>
     <main className="app">
       {/* Navigation */}
-      <nav className="nav">
+      <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           <div className="nav-brand">
             <span className="brand-text">AURA</span>
@@ -39,16 +67,24 @@ function App() {
           </div>
           
           <div className="nav-actions desktop-nav">
+            <button className="theme-toggle" onClick={toggleDarkMode}>
+              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
             <button className="btn-secondary">Sign in</button>
             <button className="btn-primary" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>Free Demo</button>
           </div>
           
-          <button 
-            className="mobile-menu-btn"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="mobile-nav-controls">
+            <button className="theme-toggle mobile" onClick={toggleDarkMode}>
+              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <button 
+              className="mobile-menu-btn"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
         
         <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -108,6 +144,10 @@ function App() {
                 Predicts customer risk with remarkable accuracy, using behavior and engagement data 
                 to identify at-risk clients before it's too late.
               </p>
+              <div className="feature-link">
+                <span>Learn more</span>
+                <ChevronRight size={16} />
+              </div>
             </div>
 
             <div className="feature-card">
@@ -119,6 +159,10 @@ function App() {
                 Helps you interpret results and suggests data-driven actions to improve retention 
                 with intelligent recommendations and insights.
               </p>
+              <div className="feature-link">
+                <span>Learn more</span>
+                <ChevronRight size={16} />
+              </div>
             </div>
 
             <div className="feature-card">
@@ -130,6 +174,10 @@ function App() {
                 Your data is validated, cleaned, and processed automatically — no manual setup required. 
                 Every report, visualization, and trend is updated in real time.
               </p>
+              <div className="feature-link">
+                <span>Learn more</span>
+                <ChevronRight size={16} />
+              </div>
             </div>
           </div>
         </div>
