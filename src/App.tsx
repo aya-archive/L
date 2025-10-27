@@ -121,7 +121,7 @@ function App() {
             {/* Desktop Actions */}
             <div className="nav-actions desktop-nav">
               <button className="btn-secondary">Sign in</button>
-              <button className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>Get started</button>
+              <button className="btn-primary" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>Free Demo</button>
             </div>
             
             {/* Mobile Menu Button */}
@@ -151,7 +151,7 @@ function App() {
             </div>
             <div className="mobile-nav-actions">
               <button className="btn-secondary mobile-btn">Sign in</button>
-              <button className="btn-primary mobile-btn" onClick={() => window.open('https://contra.com/', '_blank')}>Get started</button>
+              <button className="btn-primary mobile-btn" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>Free Demo</button>
             </div>
           </div>
         </div>
@@ -170,9 +170,9 @@ function App() {
                      automated insights.
                    </p>
           <div id="hero-buttons" className="hero-buttons">
-            <button id="request-demo-btn" className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>
+            <button id="request-demo-btn" className="btn-primary" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>
               <Zap className="btn-icon" />
-              Start building
+              Free Demo
             </button>
             <button id="learn-more-btn" className="btn-secondary">
               <ArrowRight className="btn-icon" />
@@ -433,7 +433,7 @@ function App() {
               <li id="cta-feature-4" className="cta-feature">✓ Strategy Recommendations</li>
             </ul>
             <div id="cta-buttons" className="cta-buttons">
-              <button id="start-trial-btn" className="btn-primary" onClick={() => window.open('https://contra.com/', '_blank')}>Start Free Trial</button>
+              <button id="start-trial-btn" className="btn-primary" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>Free Demo</button>
               <button id="schedule-demo-btn" className="btn-secondary">Schedule Demo</button>
             </div>
           </div>
