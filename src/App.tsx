@@ -161,13 +161,14 @@ function App() {
       <section id="hero" className="hero-section">
         <div className="container">
           <div className="hero-container">
-                   <h1 id="hero-title" className="hero-title">A.U.R.A</h1>
+                   <h1 id="hero-title" className="hero-title">AURA</h1>
                    <h2 id="hero-subtitle" className="hero-subtitle">Adaptive User Retention Assistant</h2>
                    <p id="hero-description" className="hero-description">
-                     Transform customer retention from reactive to proactive with our comprehensive 
-                     AI-powered platform. Predict churn patterns, identify at-risk customers, and 
-                     implement personalized retention strategies with intelligent analytics and 
-                     automated insights.
+                     A unified, AI-powered client retention platform that helps businesses understand, 
+                     predict, and prevent customer churn. With its adaptive intelligence and bold, 
+                     modern interface, AURA turns customer data into visual insights that drive smarter 
+                     decisions and stronger relationships. It's not just analytics — it's your 
+                     intelligent retention partner that makes data feel alive.
                    </p>
           <div id="hero-buttons" className="hero-buttons">
             <button id="request-demo-btn" className="btn-primary" onClick={() => window.open('https://huggingface.co/spaces/AURArkiv/A4LABS', '_blank')}>
@@ -189,60 +190,55 @@ function App() {
         <div className="container">
           <div className="features-container">
                    <div id="features-header" className="section-header">
-                     <h2 id="features-title" className="section-title">Intelligent Customer Retention Platform</h2>
+                     <h2 id="features-title" className="section-title">🧠 Core Features</h2>
                      <p id="features-description" className="section-description">
-                       A.U.R.A is a comprehensive AI-powered platform that empowers businesses to predict, 
-                       prevent, and optimize customer retention through intelligent analytics, automated 
-                       insights, and actionable recommendations.
+                       AURA's smart ecosystem combines machine learning and intuitive design to simplify complex analytics.
                      </p>
                    </div>
 
           <div id="features-grid" className="features-grid">
                      <div id="feature-1" className="feature-card">
                        <div className="feature-icon-container">
-                         <Eye className="feature-icon" />
+                         <Shield className="feature-icon" />
                        </div>
-                       <h3 id="feature-1-title" className="feature-title">Intelligent Dashboard</h3>
+                       <h3 id="feature-1-title" className="feature-title">Churn AI</h3>
                        <p id="feature-1-description" className="feature-description">
-                         Real-time customer health monitoring with live dashboards, predictive analytics, 
-                         interactive visualizations, and comprehensive KPI tracking for retention, 
-                         engagement, and revenue metrics.
+                         Predicts customer risk with remarkable accuracy, using behavior and engagement data 
+                         to identify at-risk clients before it's too late.
                        </p>
                        <div id="feature-1-ai" className="ai-integration">
                          <p className="ai-label">AI Model Integration:</p>
-                         <p className="ai-details">Prophet forecasting, rule-based decision engine, and NLP chatbot for intelligent insights</p>
+                         <p className="ai-details">Advanced machine learning algorithms with real-time risk assessment</p>
                        </div>
                      </div>
 
                      <div id="feature-2" className="feature-card">
                        <div className="feature-icon-container">
-                         <TrendingUp className="feature-icon" />
+                         <Brain className="feature-icon" />
                        </div>
-                       <h3 id="feature-2-title" className="feature-title">Strategy Playbook</h3>
+                       <h3 id="feature-2-title" className="feature-title">AI Assistant</h3>
                        <p id="feature-2-description" className="feature-description">
-                         Comprehensive retention strategies with 10+ proven approaches, personalized 
-                         AI-driven recommendations, success metrics with ROI analysis, and step-by-step 
-                         implementation guidance for each strategy.
+                         Helps you interpret results and suggests data-driven actions to improve retention 
+                         with intelligent recommendations and insights.
                        </p>
                        <div id="feature-2-ai" className="ai-integration">
                          <p className="ai-label">AI Model Integration:</p>
-                         <p className="ai-details">Rule-based decision engine with sentiment analysis and customer feedback processing</p>
+                         <p className="ai-details">Natural language processing with intelligent action recommendations</p>
                        </div>
                      </div>
 
                      <div id="feature-3" className="feature-card">
                        <div className="feature-icon-container">
-                         <Target className="feature-icon" />
+                         <Zap className="feature-icon" />
                        </div>
-                       <h3 id="feature-3-title" className="feature-title">AI Chatbot</h3>
+                       <h3 id="feature-3-title" className="feature-title">Smart CSV Upload</h3>
                        <p id="feature-3-description" className="feature-description">
-                         Natural language queries with intelligent insights, strategy simulation, 
-                         and interactive data exploration. Ask questions about your data in plain 
-                         English and get AI-powered analysis and recommendations.
+                         Your data is validated, cleaned, and processed automatically — no manual setup required. 
+                         Every report, visualization, and trend is updated in real time.
                        </p>
                        <div id="feature-3-ai" className="ai-integration">
                          <p className="ai-label">AI Model Integration:</p>
-                         <p className="ai-details">NLP chatbot with intent recognition and natural language processing capabilities</p>
+                         <p className="ai-details">Automated data processing with intelligent validation and cleaning</p>
                        </div>
                      </div>
 
@@ -256,11 +252,12 @@ function App() {
         <div className="container">
           <div className="demo-container">
                    <div id="demo-header" className="section-header">
-                     <h2 id="demo-title" className="section-title">Experience A.U.R.A's Modern Interface</h2>
+                     <h2 id="demo-title" className="section-title">💡 Demo Experience</h2>
                      <p id="demo-description" className="section-description">
-                       Explore the comprehensive Gradio interface with 6 main tabs: Dashboard, Customer Analysis, 
-                       Retention Strategies, Forecasting, Risk Analysis, and AI Assistant for complete 
-                       customer retention management.
+                       Experience AURA's intelligence firsthand. Upload your dataset, and watch as the system 
+                       instantly processes and analyzes thousands of customers. In seconds, you'll see churn 
+                       predictions, engagement scores, and clear risk levels displayed across vibrant, 
+                       interactive dashboards.
                      </p>
                    </div>
 
@@ -350,32 +347,34 @@ function App() {
       <section id="how-it-works" className="how-it-works-section">
         <div className="container">
           <div className="how-it-works-container">
-            <div id="how-it-works-header" className="section-header">
+          <div id="how-it-works-header" className="section-header">
               <div className="section-badge">
-                <span className="badge-text">How It Works</span>
+                <span className="badge-text">⚙️ How It Works</span>
               </div>
-              <h2 id="how-it-works-title" className="section-title">Transform Your Customer Retention Strategy</h2>
-              <p id="how-it-works-description" className="section-description">
-                A simple 4-step process powered by AI to predict, prevent, and optimize customer retention
+              <h2 id="how-it-works-title" className="section-title">Five Seamless Steps</h2>
+            <p id="how-it-works-description" className="section-description">
+                AURA works in five seamless steps. You start by uploading your customer data — then AURA's AI engine 
+                automatically cleans and maps your dataset. The platform evaluates engagement patterns and calculates 
+                churn probabilities for every customer.
               </p>
             </div>
 
             <div id="steps-grid" className="steps-grid">
               <div id="step-1" className="step-card">
                 <div className="step-header">
-                  <div className="step-icon">📊</div>
+                  <div className="step-icon">📤</div>
                   <div className="step-number">1</div>
-                </div>
+            </div>
                 <div className="step-content">
-                  <h3 className="step-title">Collect Data</h3>
-                  <p className="step-description">Gather comprehensive customer insights from multiple sources including demographics, behavior, and engagement metrics</p>
+                  <h3 className="step-title">Upload Data</h3>
+                  <p className="step-description">Start by uploading your customer data — AURA's AI engine automatically cleans and maps your dataset</p>
                   <div className="step-features">
-                    <span className="feature-tag">Demographics</span>
-                    <span className="feature-tag">Behavior</span>
-                    <span className="feature-tag">Engagement</span>
-                  </div>
-                </div>
-              </div>
+                    <span className="feature-tag">Smart Upload</span>
+                    <span className="feature-tag">Auto Clean</span>
+                    <span className="feature-tag">Data Mapping</span>
+            </div>
+            </div>
+          </div>
 
               <div id="step-2" className="step-card">
                 <div className="step-header">
@@ -383,48 +382,64 @@ function App() {
                   <div className="step-number">2</div>
                 </div>
                 <div className="step-content">
-                  <h3 className="step-title">Predict Churn</h3>
-                  <p className="step-description">Advanced AI models analyze patterns and identify at-risk customers before they leave</p>
+                  <h3 className="step-title">Evaluate Patterns</h3>
+                  <p className="step-description">The platform evaluates engagement patterns and calculates churn probabilities for every customer</p>
                   <div className="step-features">
-                    <span className="feature-tag">AI Analysis</span>
-                    <span className="feature-tag">Risk Scoring</span>
-                    <span className="feature-tag">Early Detection</span>
+                    <span className="feature-tag">Pattern Analysis</span>
+                    <span className="feature-tag">Churn Probability</span>
+                    <span className="feature-tag">Engagement Metrics</span>
                   </div>
                 </div>
               </div>
 
               <div id="step-3" className="step-card">
                 <div className="step-header">
-                  <div className="step-icon">⚡</div>
+                  <div className="step-icon">📊</div>
                   <div className="step-number">3</div>
                 </div>
                 <div className="step-content">
-                  <h3 className="step-title">Generate Strategies</h3>
-                  <p className="step-description">AI-powered recommendation engine creates personalized retention plans tailored to each customer</p>
+                  <h3 className="step-title">Generate Dashboards</h3>
+                  <p className="step-description">It then generates dynamic dashboards that visualize performance, risk, and retention health</p>
                   <div className="step-features">
-                    <span className="feature-tag">Personalized</span>
-                    <span className="feature-tag">Automated</span>
-                    <span className="feature-tag">Targeted</span>
+                    <span className="feature-tag">Dynamic Visuals</span>
+                    <span className="feature-tag">Performance Metrics</span>
+                    <span className="feature-tag">Risk Visualization</span>
                   </div>
                 </div>
               </div>
 
               <div id="step-4" className="step-card">
                 <div className="step-header">
-                  <div className="step-icon">🎯</div>
+                  <div className="step-icon">🧠</div>
                   <div className="step-number">4</div>
                 </div>
                 <div className="step-content">
-                  <h3 className="step-title">Retain Customers</h3>
-                  <p className="step-description">Implement targeted interventions and personalized experiences to prevent churn and boost retention</p>
+                  <h3 className="step-title">AI Interpretation</h3>
+                  <p className="step-description">AURA's assistant interprets your data, summarizing patterns and offering intelligent recommendations</p>
                   <div className="step-features">
-                    <span className="feature-tag">Interventions</span>
-                    <span className="feature-tag">Personalization</span>
-                    <span className="feature-tag">Retention</span>
+                    <span className="feature-tag">Data Interpretation</span>
+                    <span className="feature-tag">Pattern Summary</span>
+                    <span className="feature-tag">Smart Recommendations</span>
                   </div>
                 </div>
               </div>
+
+              <div id="step-5" className="step-card">
+                <div className="step-header">
+                  <div className="step-icon">🎯</div>
+                  <div className="step-number">5</div>
+                </div>
+                <div className="step-content">
+                  <h3 className="step-title">Act with Confidence</h3>
+                  <p className="step-description">Finally, AURA helps you act with confidence by providing actionable insights and intelligent recommendations</p>
+                  <div className="step-features">
+                    <span className="feature-tag">Actionable Insights</span>
+                    <span className="feature-tag">Confident Decisions</span>
+                    <span className="feature-tag">Intelligent Actions</span>
+                  </div>
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -434,11 +449,11 @@ function App() {
         <div className="container">
           <div className="benefits-container">
                    <div id="benefits-header" className="section-header">
-                     <h2 id="benefits-title" className="section-title">Comprehensive Customer Retention Platform</h2>
+                     <h2 id="benefits-title" className="section-title">✨ Why Choose AURA</h2>
                      <p id="benefits-description" className="section-description">
-                       A.U.R.A provides everything you need for intelligent customer retention: 
-                       real-time monitoring, predictive analytics, strategy recommendations, 
-                       and automated insights in one integrated platform.
+                       AURA merges automation, analytics, and art into a single experience. It's designed for businesses 
+                       that want to act before customers leave — not after. With an adaptive AI core, vibrant visuals, 
+                       and real-time intelligence, AURA makes customer retention a creative, data-driven journey.
                      </p>
                    </div>
 
@@ -447,10 +462,9 @@ function App() {
 
 
           <div id="cta-section" className="cta-section">
-            <h2 id="cta-title" className="cta-title">Ready to Experience A.U.R.A?</h2>
+            <h2 id="cta-title" className="cta-title">Ready to Experience AURA?</h2>
             <p id="cta-description" className="cta-description">
-              Get started with A.U.R.A's comprehensive customer retention platform featuring intelligent dashboards, 
-              AI-powered analytics, and automated insights for your business.
+              Whether you're analyzing churn or exploring growth potential, AURA transforms insight into action — beautifully.
             </p>
             <ul id="cta-features" className="cta-features">
               <li id="cta-feature-2" className="cta-feature">✓ AI Chatbot Assistant</li>
@@ -473,9 +487,10 @@ function App() {
               <h3 id="footer-company-name" className="footer-title">A.U.R.A</h3>
               <p id="footer-company-tagline" className="footer-tagline">Adaptive User Retention Assistant</p>
               <p id="footer-company-description" className="footer-description">
-                A comprehensive AI-powered platform that empowers businesses to predict, prevent, 
-                and optimize customer retention through intelligent analytics, automated insights, 
-                and actionable recommendations.
+                A unified, AI-powered client retention platform that helps businesses understand, 
+                predict, and prevent customer churn. With its adaptive intelligence and bold, 
+                modern interface, AURA turns customer data into visual insights that drive smarter 
+                decisions and stronger relationships.
               </p>
             </div>
 
